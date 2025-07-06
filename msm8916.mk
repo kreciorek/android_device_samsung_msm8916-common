@@ -128,6 +128,15 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
     SystemUI
 
+# Debloater
+PRODUCT_PACKAGES += \
+    RemoveCamera2 \
+    RemoveGallery2 \
+    RemoveEleven \
+    RemoveJely \
+    RemoveEtar \
+    RemoveAudioFX
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
