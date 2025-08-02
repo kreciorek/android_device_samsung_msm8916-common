@@ -1,0 +1,15 @@
+allow untrusted_app_27 sysfs:file { open read getattr };
+allow untrusted_app_27 proc_qtaguid_stat:file { getattr open read };
+allow untrusted_app_27 proc_qtaguid_stat:dir { search read };
+allow untrusted_app_27 rootfs:dir r_dir_perms;
+allow untrusted_app_27 proc:file { getattr open read };
+allow untrusted_app_27 proc:dir { search read };
+allow untrusted_app_27 sysfs_net:dir r_dir_perms;
+allow untrusted_app_27 proc_zoneinfo:file r_file_perms;
+allow untrusted_app_27 proc_vmstat:file { open getattr };
+allow untrusted_app_27 proc_uptime:file { open getattr };
+allow untrusted_app_27 dalvikcache_data_file:file { r_file_perms execmod };
+allow untrusted_app_27 sysfs_batteryinfo:dir { search };
+allow untrusted_app_27 sysfs_batteryinfo:file { read open getattr };
+allow untrusted_app_27 app_data_file:file { execute };
+allow untrusted_app_27 sysfs_kgsl_gpuclk:file { read open getattr };
